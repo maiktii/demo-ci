@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Secret as Environment Variable
-        run: echo "AWS Key Loaded"
-        env:
-          AWS_KEY: ${{ secrets.AWS_KEY }}
+     # - name: Use Secret as Environment Variable
+     #   run: echo "AWS Key Loaded"
+     #   env:
+     #     AWS_KEY: ${{ secrets.AWS_KEY }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
