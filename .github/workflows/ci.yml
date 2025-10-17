@@ -10,6 +10,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Use Secret as Environment Variable
+        run: echo "AWS Key Loaded"
         env:
           AWS_KEY: ${{ secrets.AWS_KEY }}
 
