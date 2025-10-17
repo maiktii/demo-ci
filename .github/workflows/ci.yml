@@ -22,6 +22,6 @@ jobs:
       - name: Run NPM Audit(Dependency Scan)
         run: npm audit --audit-level=high
       - name: GitLeaks Scan(Secrets Detection)
-        run: zricethezav/gitleaks-action@v2
+        uses: zricethezav/gitleaks-action@v2
         with:
           args: --verbose --redact
